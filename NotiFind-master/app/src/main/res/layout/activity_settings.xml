@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F222D"
+    tools:context=".Activities.SettingsActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="264dp"
+        android:layout_height="348dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="200dp"
+        app:cardCornerRadius="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gloss">
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="59dp"
+                android:layout_marginBottom="152dp"
+                android:background="@android:color/transparent"
+                android:onClick="btnAboutClicked"
+                android:text="@string/about" />
+
+            <Button
+                android:id="@+id/btnCloseAccount"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="76dp"
+                android:background="@android:color/transparent"
+                android:onClick="closeAccountClicked"
+                android:text="@string/close_account" />
+
+            <Button
+                android:id="@+id/howToUseButt"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="56dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="61dp"
+                android:background="@android:color/transparent"
+                android:onClick="btnHowToUseButtClicked"
+                android:text="How to use app" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnPrevious"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="40dp"
+
+        android:background="#0F222D"
+        android:onClick="btnPreviousClicked"
+        android:text="@string/back"
+        android:textColor="#FFEB3B" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="260dp"
+        android:layout_height="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="74dp"
+
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="ContentDescription" />
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#0F222D"
+    tools:context=".Viewing.ReportViewingActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/missingPersonsDisplay"
+        android:layout_width="328dp"
+        android:layout_height="651dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/gloss"
+        app:fontFamily="@font/mystery_quest" />
+
+    <Button
+        android:id="@+id/UserSignOutButton"
+        android:layout_width="64dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="697dp"
+        android:background="#0F222D"
+
+        android:onClick="signOut"
+        android:text="Sign Out"
+        android:textColor="#FFEB3B"
+        android:fontFamily="@font/mystery_quest"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
